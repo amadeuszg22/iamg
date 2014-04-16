@@ -16,5 +16,7 @@ sudo rsync -artvpolz /sysrepo/iamg/LB/config/.ssh/ /root/.ssh/
 echo "System install nginx and configure it"
 sudo apt-get install nginx -y
 sudo rsync -artvpolz /sysrepo/iamg/LB/config/nginx/ /etc/nginx/
+sudo chmod a-rwx ~/.ssh/id_rsa
+sudo chmod u+rw ~/.ssh/id_rsa
 sudo /etc/init.d/nginx reload
 

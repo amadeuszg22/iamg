@@ -13,4 +13,6 @@ sudo mkdir /sysrepo
 sudo git clone git@github.com:amadeuszg22/iamg.git /sysrepo
 echo "System copy keys"
 sudo rsync -artvpolz /sysrepo/iamg/LB/config/.ssh/ /root/.ssh/
+sudo chmod a-rwx ~/.ssh/id_rsa
+sudo chmod u+rw ~/.ssh/id_rsa
 echo "System install NoIP and configure it"
