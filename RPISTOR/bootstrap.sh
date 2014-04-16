@@ -16,3 +16,7 @@ sudo rsync -artvpolz /sysrepo/iamg/LB/config/.ssh/ /root/.ssh/
 sudo chmod a-rwx ~/.ssh/id_rsa
 sudo chmod u+rw ~/.ssh/id_rsa
 echo "System install NoIP and configure it"
+cd /sysrepo/iamg/RPISTOR/app/noip-2.1.9-1
+sudo make
+sudo make install
+
