@@ -19,4 +19,6 @@ echo "System install NoIP and configure it"
 cd /sysrepo/iamg/RPISTOR/app/noip-2.1.9-1
 sudo make
 sudo make install
-
+echo "System mounts storage"
+sudo mkdir /stor
+sudo mount /dev/sda1 /stor/
