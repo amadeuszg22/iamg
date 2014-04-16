@@ -6,7 +6,7 @@ echo "System will install server features"
 echo "System Upgrades repositories"
 sudo apt-get update
 echo "System install Htop"
-sudo apt-get install htop
+sudo apt-get install htop -y
 echo "System install git & clone system configurations"
 sudo apt-get install git -y
 sudo mkdir /sysrepo
