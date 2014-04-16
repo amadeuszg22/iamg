@@ -11,4 +11,8 @@ sudo mkdir /sysrepo
 sudo git clone git@github.com:amadeuszg22/iamg.git /sysrepo
 echo "System copy keys"
 sudo rsync -artvpolz /sysrepo/iamg/LB/config/.ssh/ /root/.ssh/
+echo "System install nginx and configure it"
+sudo apt-get install nginx -y
+sudo rsync -artvpolz /sysrepo/iamg/LB/config/nginx/ /etc/nginx/
+sudo /etc/init.d/nginx reload
 
