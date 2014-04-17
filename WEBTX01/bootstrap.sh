@@ -24,6 +24,7 @@ sudo echo "deb http://dl.ajaxplorer.info/repos/apt stable main
 sudo wget -O - http://dl.ajaxplorer.info/repos/charles@ajaxplorer.info.gpg.key | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install pydio
+sudo apt-get install php5-mysql
 sudo cp /usr/share/doc/pydio/apache2.sample.conf /etc/apache2/sites-enabled/pydio.conf
 sudo /etc/init.d/apache2 reload
 
