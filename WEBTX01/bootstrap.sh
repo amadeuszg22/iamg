@@ -18,4 +18,12 @@ sudo apt-get install apache2 -y
 sudo chmod a-rwx ~/.ssh/id_rsa
 sudo chmod u+rw ~/.ssh/id_rsa
 sudo /etc/init.d/apache2 reload
+echo "System installs ajax explorer"
+sudo echo "deb http://dl.ajaxplorer.info/repos/apt stable main
+> deb-src http://dl.ajaxplorer.info/repos/apt stable main">> /etc/apt/sources.lis
+sudo wget -O - http://dl.ajaxplorer.info/repos/charles@ajaxplorer.info.gpg.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install pydio
+sudo cp /usr/share/doc/pydio/apache2.sample.conf /etc/apache2/sites-enabled/pydio.conf
+sudo /etc/init.d/apache2 reload
 
