@@ -22,3 +22,5 @@ sudo make install
 echo "System mounts storage"
 sudo mkdir /stor
 sudo mount /dev/sda1 /stor/
+echo "System installs mysql & phpmyamdin"
+sudo apt-get install mysql-server mysql-client phpmyadmin -y
